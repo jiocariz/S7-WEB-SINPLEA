@@ -1,0 +1,102 @@
+/* style.css fitxategian dagoen CSS kodea */
+header {
+    background-color: #f2f2f2;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Biderketa lerrokatzea erdiatzea header barruan */
+  }
+  
+  
+  
+  /* IMG etiketa estiloak */
+  header img {
+    /*margin-left: auto;  IMG etiketa eskuinera lerrokatzea */
+    height: 90px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th:nth-child(1) {
+    width: 25%; /* Lehenengo zutabearen zabalera % 25 */
+  }
+  
+  th:nth-child(2) {
+    width: 50%; /* Bigarren zutabearen zabalera % 50 */
+  }
+  
+  th:nth-child(3) {
+    width: 25%; /* Hirugarren zutabearen zabalera % 25 */
+  }
+
+  #tdARGIA img {
+    height: 20px;
+}
+
+#pEtengailua img {
+  height: 75px;
+}
+
+#pEtengailua img:hover{
+  cursor: grab;
+}
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+  }
+
+  footer {
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-size: small; /* Letra txikia */
+    color: #777; /* Letra kolorea */
+    background-color: #f7f7f7; /* Esparruaren kolorea */
+    padding: 10px; /* Esparruaren padding-a */
+    margin-top: 20px; /* Esparruaren goialdea */
+  }
+  
+  /* Lerro grisa estiloa */
+  footer p {
+    color: #777;
+  }
+
+  .error{    
+        font-size: small;
+        color: red;
+        font-weight: bold;
+  }
+
+  .irudia {
+          height: 100px; /* Altuera 100px */
+          float: right; /* Eskuineko muturrean agertzeko */
+          margin-left: 10px; /* Ezkerreko tartean espazioa */
+      }
+
+  

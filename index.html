@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- AWP_In_Variable Name='"BOTOIA"' -->
+  <!-- AWP_In_Variable Name='"KonfigurazioOrokorra".t1ON' -->
+  <title>Zure orrialdea</title>
+  <link rel="stylesheet" type="text/css" href="css/ji-s7-web.css">
+  <!--meta http-equiv="refresh" content="2"-->
+</head>
+<body>
+  <header>
+    <!-- Gure burukoa -->
+    <h1>S7-1500 web orria</h1>   
+    <img src="http://192.168.66.10/img/S7-1500.JPG"/> 
+  </header>
+  <section>
+  <div>
+    <p><span id="spanPLCriEskaerak"></span> eskaerak bidali dizkio nabigatzaileak PLCren zerbitzariari</p>
+  </div>
+  <div>
+    <h2>IRTEERAK</h2>
+    <table>
+      <tr>
+        <th>ALDAGAIA</th>
+        <th>DESKRIBAPENA</th>
+        <th>BALIOA</th>
+      </tr>
+      <tr>
+        <td>"ARGIA"</td>
+        <td>Argiaren egoera</td>
+        <td id="tdARGIA"><img src='img/pilotoOFF.JPG' alt=':="ARGIA":'/></td>
+      </tr>
+      <tr>
+        <td>"IEC_Timer_0_DB".ET</td>
+        <td>Kontatzen ari den balorea</td>
+        <td id="tdTENPORIZADOREA">:="IEC_Timer_0_DB".ET:</td>
+      </tr>
+      <tr>
+        <td>"IEC_Counter_0_DB_3".CV</td>
+        <td>Ziklo Kopurua</td>
+        <td id="tdZIKLO_KOPURUA">:="IEC_Counter_0_DB_3".CV:</td>
+      </tr>
+    </table>
+    <p id="pJSON-error" class="error"></p>
+  </div>
+  <div>
+    <form id="form1" method="post" action="">
+        <h2>SARRERAK</h2>
+        <!--
+        <p>Idatzi lauki honetan automatari bidali nahi diozun balioa: </p>
+        <input type='text' name='"BOTOIA"' value=':="BOTOIA":'/>
+        <input type="submit" value="Bidali PLC-ra"/>
+        -->
+        <p id="pEtengailua"><img src=""/></p>
+        <input type='hidden' name='"BOTOIA"'/>
+    </form>
+  </div>
+  <div>    
+    <form id="form2" method="post" action="">
+      <h2>KONFIGURAZIO OROKORRA</h2>
+      <p>Idatzi lauki honetan tenporizadoreak duen balioa: </p>
+      <input type='text' name='"KonfigurazioOrokorra".t1ON' value=':="KonfigurazioOrokorra".t1ON:'/>
+      <input type="submit" value="Aldatu konfigurazioa"/>
+  </form>
+  </div>
+  </section>  
+  <footer>
+    <!-- Oinarrizko oharra -->
+    <p>&copy; 2023 JI - S7 -Web. Eskubide guztiak erreserbatuak.</p>
+  </footer>
+  <script src="js/irteerak-freskatzeko.js" type="text/javascript"></script>
+</body>
+</html>
